@@ -1,5 +1,5 @@
 fun main(){
-    val spices = listOf("curry", "pepper", "cayenne", "ginger", "red curry", "green curry", "red pepper")
+    val spices = listOf("curry", "pepper", "cayenne", "ginger", "red curry", "green curry")
     // take all spices and sort by string length
     println(spices.filter { it.contains("curry") }.sortedBy { it.length })
     // check filter start with 'c' and end in 'e'
