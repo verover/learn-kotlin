@@ -1,9 +1,15 @@
 package Spices
 
-class Spices {
-    val spice: String = "curry"
-    val spiciness: String = "mild"
-
+class Spices (var name: String, var spiciness: String = "mild"){
+        init {
+        println("Spice: $name ($spiciness)")
+    }
     val heat : Int
-    get() {if (spiciness=="mild") return 5 else return 0}
+        get() {return when(spiciness){
+            "mild" -> 1
+            "medium" -> 3
+            "spicy" -> 5
+            "very spicy" -> 7
+            else -> 0
+        }}
 }
